@@ -1,7 +1,9 @@
-<%= @item.title %>
-<%= @item.description %><br>
+<div class="col-md-6 col-md-offset-3">
+	<%= @item.title %>
+	<%= @item.description %><br>
 
 
-<%= link_to "<<BACK", root_path %>
-<%= link_to "EDIT", edit_item_path(@item) %>
-<%= link_to "DELETE", item_path(@item), method: :delete, data: { confirm: "Are you sure?" } %>
+	<%= link_to "<<BACK", root_path %>
+	<%= link_to "EDIT", edit_item_path(@item) %>
+	<%= link_to "DELETE", item_path(@item), method: :delete, data: { confirm: "Are you sure?" } %>
+</div>
